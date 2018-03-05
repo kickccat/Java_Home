@@ -9,11 +9,15 @@ public class Branch {
 
     public Branch(String name){
         this.name = name;
-        this.customers = new ArrayList<Customer>();
+        this.customers = new ArrayList<>();
     }
 
     public String getName() {
         return name;
+    }
+
+    public ArrayList<Customer> getCustomers() {
+        return customers;
     }
 
     public boolean newCustomer(String customerName, double initialAmount){
